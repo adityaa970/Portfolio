@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <style>
+      .bg { fill: url(#g1); }
+      .card { fill: #fff; stroke: rgba(0,0,0,0.06); stroke-width:2 }
+      .title { font-family: Inter, Arial, Helvetica, sans-serif; font-size:44px; fill:#0f172a }
+      .sub { font-family: Inter, Arial, Helvetica, sans-serif; font-size:18px; fill:#334155 }
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="800" rx="20" />
+  <g transform="translate(60,120)">
+    <rect class="card" x="0" y="0" width="1080" height="560" rx="14"/>
+    <text class="title" x="40" y="80">Web Utilities</text>
+    <text class="sub" x="40" y="120">Calculators, converters, encoders & generators — fast utilities built with Next.js</text>
+
+    <g transform="translate(40,160)">
+      <rect x="0" y="0" width="320" height="56" rx="8" fill="#f8fafc"/>
+      <rect x="0" y="80" width="320" height="56" rx="8" fill="#f8fafc"/>
+      <rect x="0" y="160" width="320" height="56" rx="8" fill="#f8fafc"/>
+
+      <g transform="translate(380,0)">
+        <rect x="0" y="0" width="220" height="220" rx="12" fill="#0ea5a4" opacity="0.95"/>
+        <text x="20" y="120" font-size="26" fill="#fff">Calc</text>
+        <text x="20" y="152" font-size="26" fill="#fff">Conv</text>
+      </g>
+    </g>
+  </g>
+</svg>

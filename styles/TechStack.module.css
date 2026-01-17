@@ -1,0 +1,144 @@
+.techStack {
+    text-align: center;
+    margin: 5rem 3rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.ProjectHeading{
+    font-size: 1rem;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    opacity: 75%;
+}
+
+.image {
+    margin-bottom: -175px;
+    position: relative;
+    z-index: -1;
+    opacity: 55%;
+    width: 90%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: auto;
+    max-width: 385px;
+    mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    -webkit-transition: -webkit-transform 0.1s ease-out;
+    transition: -webkit-transform 0.1s ease-out;
+    -o-transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+}
+
+
+.techGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 12px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+}
+
+.techItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    gap: 5px;
+    font-weight: bold;
+    -webkit-transition: background 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+    transition: background 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+    -o-transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #80808078;
+    background: rgb(31 31 31);
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transform: scale(0.8) rotate(10deg);
+        -ms-transform: scale(0.8) rotate(10deg);
+            transform: scale(0.8) rotate(10deg);
+}
+
+.fadeIn {
+    opacity: 1 !important;
+    -webkit-transform: scale(1) rotate(0deg) !important;
+        -ms-transform: scale(1) rotate(0deg) !important;
+            transform: scale(1) rotate(0deg) !important;
+    -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.techItem:hover {
+    -webkit-transform: scale(1.05) rotate(5deg) !important;
+        -ms-transform: scale(1.05) rotate(5deg) !important;
+            transform: scale(1.05) rotate(5deg) !important;
+    -webkit-box-shadow: 0 6px 15px rgb(0 0 0 / 30%);
+            box-shadow: 0 6px 15px rgb(0 0 0 / 30%);
+}
+
+.techItem:hover .techIcon {
+    -webkit-transform: scale(1.2) !important;
+        -ms-transform: scale(1.2) !important;
+            transform: scale(1.2) !important;
+}
+
+
+.techIcon {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.techName {
+    color: #c6c6c6;
+    -webkit-text-fill-color: initial; 
+    transition: background 0.3s ease, -webkit-text-fill-color 0.3s ease;
+}
+
+.techItem:hover .techName {
+    background: -webkit-gradient(linear, left top, right top, from(#ff7e5f), to(#feb47b));
+    background: -o-linear-gradient(left, #ff7e5f, #feb47b);
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+@media (max-width: 765px) {
+    .techItem{
+        font-size: 0.7rem;
+    }
+    .techGrid{
+        gap: 8px;
+    }
+
+}

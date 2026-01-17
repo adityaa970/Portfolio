@@ -1,0 +1,112 @@
+.bannerWrapper {
+    width: 100%;
+    overflow: hidden;
+    background-color: #211d99;
+    padding: 10px 0;
+    position: relative;
+    -webkit-transform: rotate(350deg);
+        -ms-transform: rotate(350deg);
+            transform: rotate(350deg);
+}
+
+.bannerWrapper::before, .bannerWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    z-index: 2;
+}
+
+.bannerWrapper::before {
+    left: 0;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(10 10 10)), to(rgba(5, 44, 50, 0)));
+    background: -o-linear-gradient(left, rgb(10 10 10) 0%, rgba(5, 44, 50, 0) 100%);
+    background: linear-gradient(to right, rgb(10 10 10) 0%, rgba(5, 44, 50, 0) 100%);
+}
+
+.bannerWrapper::after {
+    right: 0;
+    background: -webkit-gradient(linear, right top, left top, from(rgb(10 10 10)), to(rgba(5, 44, 50, 0)));
+    background: -o-linear-gradient(right, rgb(10 10 10) 0%, rgba(5, 44, 50, 0) 100%);
+    background: linear-gradient(to left, rgb(10 10 10) 0%, rgba(5, 44, 50, 0) 100%);
+}
+
+.banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap; 
+    -webkit-animation: moveLeftToRight 20s linear infinite; 
+            animation: moveLeftToRight 20s linear infinite;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.bannerContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.techItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 30px; 
+}
+
+.techItem span {
+    margin-left: 10px; 
+    font-size: 1rem;
+}
+
+@-webkit-keyframes moveLeftToRight {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); 
+    }
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); 
+    }
+}
+
+.techIcon {
+    font-size: 2rem; 
+}
+
+
+@media (max-width: 765px) {
+    .techIcon {
+        font-size: 1rem;
+    }
+    .bannerWrapper {
+        padding: 5px 0;
+    }
+}

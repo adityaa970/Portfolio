@@ -1,0 +1,194 @@
+.aboutContainer {
+    margin: 5rem auto;
+    text-align: center;
+    width: 90%;
+    -webkit-animation: fadeIn 0.8s ease-in-out;
+            animation: fadeIn 0.8s ease-in-out;
+}
+
+.Container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+    max-width: 80%;
+    margin: auto;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+                transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.heading {
+    font-size: 1rem;
+    color: #c6c6c6;
+    padding-bottom: 1rem;
+}
+
+.mainheading {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    font-family: Calibri;
+    line-height: 0.8;
+}
+
+.mainheading span {
+    background: -o-linear-gradient(22deg, #0056ff, #ff008a, #00d5ff);
+    background: linear-gradient(68deg, #0056ff, #ff008a, #00d5ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: gradientMove 10s ease infinite;
+            animation: gradientMove 10s ease infinite;
+    font-style: italic;
+}
+
+@-webkit-keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.bio {
+    font-size: 1rem;
+    color: #f2f2f2cc;
+    margin-bottom: 1.5rem;
+    padding: 0 10px;
+    margin-top: 2rem;
+
+}
+
+.details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.5rem;
+}
+
+.me {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid transparent; 
+    border: 5px solid #a814a8;
+}
+
+.me img {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.more {
+    color: #fcfcfca8;
+    text-decoration: none;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+}
+
+.more:hover{
+    background: -o-linear-gradient(22deg, #0056ff, #ff008a, #00d5ff);
+    background: linear-gradient(68deg, #0056ff, #ff008a, #00d5ff);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: gradientMove 10s ease infinite;
+            animation: gradientMove 10s ease infinite;
+}
+
+
+@media (max-width: 765px) {
+    .mainheading {
+        font-size: 2rem;
+        line-height: 1;
+        padding-bottom: 0;
+    }
+
+    .bio {
+        font-size: 0.95rem;
+        padding: 0 5px;
+    }
+
+    .details {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 1rem;
+    }
+
+    .heading {
+        font-size: 0.9rem;
+    }
+    .me{
+        display: none;
+    }
+}
