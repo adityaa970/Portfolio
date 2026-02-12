@@ -22,15 +22,15 @@ const certifications = [
   },
   {
     title: "Introduction to Internet of Things",
-    issuer: "Infosis",
+    issuer: "Infosys",
     year: "2025",
-    image: "/Infosis_iot.png",
+    image: "/Infosys_iot.png",
   },
     {
     title: "Learnin Python",
-    issuer: "Infosis",
+    issuer: "Infosys",
     year: "2025",
-    image: "/Infosis_python.png",
+    image: "/Infosys_python.png",
   },
     {
     title: "Blind Coding 1st Position",
