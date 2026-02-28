@@ -34,21 +34,27 @@ const certifications = [
   },
     {
     title: "Blind Coding 1st Position",
-    issuer: "MIMT Collage",
+    issuer: "MIMT college",
     year: "2024",
     image: "/blind_coding.jpg",
   },
   {
     title: "Introduction to Ds, Ai, ML",
-    issuer: "MIMT Collage",
+    issuer: "MIMT college",
     year: "2023",
     image: "/data_science.jpg",
   },
     {
     title: "Hardware Assembly and Networking",
-    issuer: "MIMT Collage",
+    issuer: "MIMT college",
     year: "2024",
     image: "/hardware_assembly_and_Networking.jpg",
+  },
+      {
+    title: "Hackathon Winner",
+    issuer: "HIMT college",
+    year: "2026",
+    image: "/Hackathon_Winner.jpg",
   },
 ];
 

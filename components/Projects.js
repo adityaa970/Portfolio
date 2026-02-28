@@ -145,6 +145,26 @@ export default function PortfolioProjects({ visibleCount = 4 }) {
   };
 
   const projects = [
+              {
+        title: "DermaSetu",
+        description:
+          "A digital platform that enables early detection and remote diagnosis of skin diseases to improve healthcare access in rural and underserved communities.",
+        points: [
+          "Enables early detection of skin diseases using image-based analysis.",
+          "Allows health workers or patients to upload skin images securely.",
+          "Reduces diagnostic delays and improves treatment accessibility.",
+          "Maintains patient records digitally for tracking and follow-up.",
+          "Works on low-resource devices to ensure rural usability.",
+        ],
+        technologies:
+          "Next.js, Firebase, REST API, TensorFlow, Python, OpenCV",
+        link: "https://dermasetu.vercel.app",
+        image: "/dermasetu.jpg",
+        bgColor: "#1f6fff",
+        bulletColor: "#1f6fff",
+        overlayText:
+          "Create professional resumes with AI assistance, customizable templates, and one-click export. Build your perfect resume in minutes.",
+      },
           {
         title: "ResumeAI Pro",
         description:
